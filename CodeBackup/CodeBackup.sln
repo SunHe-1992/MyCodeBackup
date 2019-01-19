@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesRename", "FilesRename\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Levenshtein", "Levenshtein\Levenshtein.csproj", "{197CDFF9-1E43-4B81-9AD0-9F99572FB318}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2048", "My2048\2048.csproj", "{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

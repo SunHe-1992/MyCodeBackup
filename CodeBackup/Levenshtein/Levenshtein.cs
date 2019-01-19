@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-//Written by Krane Sun 2014-11-18 17:15:36
+﻿//Written by Krane Sun 2014-11-18 17:15:36
 
 namespace WindowsFormsApplication2
 {

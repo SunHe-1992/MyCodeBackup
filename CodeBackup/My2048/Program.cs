@@ -1,7 +1,9 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
-namespace CodeBackup
+namespace _2048
 {
     static class Program
     {
@@ -13,7 +15,7 @@ namespace CodeBackup
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Starter());
+            Application.Run(new Form1());
         }
     }
 }
