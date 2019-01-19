@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBackup", "CodeBackup\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesRename", "FilesRename\FilesRename.csproj", "{C9AF3673-A39E-4A4F-A499-5FEEC1C41135}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Levenshtein", "Levenshtein\Levenshtein.csproj", "{197CDFF9-1E43-4B81-9AD0-9F99572FB318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C9AF3673-A39E-4A4F-A499-5FEEC1C41135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9AF3673-A39E-4A4F-A499-5FEEC1C41135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9AF3673-A39E-4A4F-A499-5FEEC1C41135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{197CDFF9-1E43-4B81-9AD0-9F99572FB318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
