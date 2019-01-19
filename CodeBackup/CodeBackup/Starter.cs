@@ -1,11 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 // This is the code for your desktop app.
@@ -145,6 +142,76 @@ namespace CodeBackup
         {
             string fileName = @"file.ext.ccc.ddd";
             Console.WriteLine(fileName + "去掉扩展名是" + RemoveExtension(fileName));
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            var allProcceses = System.Diagnostics.Process.GetProcesses();
+
+            foreach (var pcs in allProcceses)
+            {
+                if (pcs.ProcessName == "EXCEL")
+                {
+                    Console.WriteLine("检测到excel正在运行");
+                    Console.ReadKey();
+                    return;
+                }
+            }
+            Console.WriteLine("没有检测到excel");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("看代码 运行硬盘上的批处理");
+            return;
+            //运行硬盘上的批处理
+            string path = @"C:\Users\Administrator\Desktop\";
+            var proc = new System.Diagnostics.Process();
+            proc.StartInfo.WorkingDirectory = path;
+            proc.StartInfo.FileName = "abcd.bat";
+            proc.StartInfo.CreateNoWindow = false;
+            proc.Start();
+            proc.WaitForExit();
+
+            /*
+             * 批处理里面这样写 调用svn 进行update操作
+             CD C:\Program Files\TortoiseSVN\bin\
+START TortoiseProc.exe /command:update /path:"C:\Project\xxxxx"
+START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
+             */
+        }
+
+        OpenFileDialog openFileDialog1 = null;
+        private void button11_Click(object sender, EventArgs e)
+        {
+            openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.FileOk += OpenFileBtn11;
+            openFileDialog1.ShowDialog();
+        }
+
+        private void OpenFileBtn11(object sender, CancelEventArgs e)
+        {
+            /*读取硬盘的文本文档的所有字符 
+             * 必须是UTF-8字符编码
+             * 给每个字符存入hashset里面 快速去重 后保存*/
+            HashSet<char> hsTable = new HashSet<char>();
+            //StreamReader 读取 打开的文件
+            StreamReader sr = new StreamReader(openFileDialog1.OpenFile());
+            string source = sr.ReadToEnd();
+            Console.WriteLine("old string Length = " + source.Length);
+            foreach (char s in source)
+            {
+                //Console.WriteLine(s.ToString());
+                hsTable.Add(s);
+            }
+            StringBuilder sb = new StringBuilder();
+            foreach (char s in hsTable)
+            {
+                sb.Append(s);
+            }
+            string output = sb.ToString();
+            System.IO.File.WriteAllText(@"D:\fontcharactors.txt", output);
+            Console.WriteLine("new string Length = " + output.Length);
         }
     }
 }
