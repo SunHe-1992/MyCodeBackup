@@ -53,9 +53,47 @@ namespace CodeBackup
         {
             //两个时间点的时间间隔
             DateTime battleTime = new DateTime(2016, 1, 1); //日期
+
             TimeSpan ts = DateTime.Now.Subtract(battleTime).Duration();
             Console.WriteLine("距离" + battleTime.ToShortDateString()
                 + "时间间隔 = " + TimeSpan2String(ts));
+
+            Console.WriteLine(TSToString(GetCurrentTimeUnix(battleTime)));
+        }
+        /// <summary>
+        /// 时间=>时间戳
+        /// </summary>
+        /// <returns></returns>
+        static long GetCurrentTimeUnix(DateTime dt)
+        {
+            TimeSpan cha = (dt - TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1)));
+            long t = (long)cha.TotalSeconds;
+            return t;
+        }
+        /// <summary>
+        /// 给定的时间戳 转换成距离现在多久
+        /// </summary>
+        /// <param name="givenTS"></param>
+        /// <returns></returns>
+        static string TSToString(long givenTS)
+        {
+            long nowTS = GetCurrentTimeUnix(DateTime.Now);
+            TimeSpan passed = TimeSpan.FromSeconds(nowTS - givenTS);
+            bool isFuture = passed.TotalSeconds < 0;
+            string tail = isFuture ? "后" : "前";
+            string day = "天";
+            string hour = "小时";
+            string minute = "分钟";
+
+            passed = passed.Duration();
+            if (passed.TotalDays > 0)
+                return (int)passed.TotalDays + day + tail;
+            if (passed.TotalHours > 0)
+                return (int)passed.TotalHours + hour + tail;
+            if (passed.TotalMinutes > 0)
+                return (int)passed.TotalMinutes + minute + tail;
+
+            return "刚刚";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -213,5 +251,27 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
             System.IO.File.WriteAllText(@"D:\fontcharactors.txt", output);
             Console.WriteLine("new string Length = " + output.Length);
         }
+
+        public static string GetNumString(int num)
+        {
+            if (num < 10 * 1000)
+                return num.ToString();
+            else if (num < 10 * 1000 * 1000)
+                return num / 1000 + "K";
+            else
+                return num / 1000000 + "M";
+        }
+        /// <summary>
+        /// 测试按钮 随便写
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string test = "TXT-10124\n";
+
+            Console.WriteLine(test.Trim() + test + test);
+        }
+
     }
 }
