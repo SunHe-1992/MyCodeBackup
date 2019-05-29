@@ -268,10 +268,9 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
         /// <param name="e"></param>
         private void button12_Click(object sender, EventArgs e)
         {
-            string test = "TXT-10124\n";
-
-            Console.WriteLine(test.Trim() + test + test);
+            //string test = "TXT-10124\n";
+            //Console.WriteLine(test.Trim() + test + test);
         }
-
+        
     }
 }

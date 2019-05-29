@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BatchIconReplace.Properties {
+namespace 批量换红雀图标.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
