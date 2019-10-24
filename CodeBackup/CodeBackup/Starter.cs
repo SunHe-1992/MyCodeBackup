@@ -4,7 +4,8 @@ using System.ComponentModel;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
+using System.Linq;
 // This is the code for your desktop app.
 // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
 
@@ -268,9 +269,17 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
         /// <param name="e"></param>
         private void button12_Click(object sender, EventArgs e)
         {
-            //string test = "TXT-10124\n";
-            //Console.WriteLine(test.Trim() + test + test);
+            /*
+  java.lang.Error: {"result":11036,"msg":"GooglePayÈ¡Ïû","info":"IabResult: User canceled. (response: -1005:User cancelled)"}
+             */
+            //string rawString = File.ReadAllText(@"D:\testText.txt");
+            //Regex rg = new Regex(@"{(.*?)}");
+            //MatchCollection matchedAuthors = rg.Matches(rawString);
+            //string[] output = matchedAuthors.Cast<Match>()
+            //    .Select(m => m.Value)
+            //    .ToArray();
+            //    Console.WriteLine(output[0]);
         }
-        
+
     }
 }
