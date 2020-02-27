@@ -269,6 +269,7 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
         /// <param name="e"></param>
         private void button12_Click(object sender, EventArgs e)
         {
+            //test github
             /*
   java.lang.Error: {"result":11036,"msg":"GooglePayÈ¡Ïû","info":"IabResult: User canceled. (response: -1005:User cancelled)"}
              */
