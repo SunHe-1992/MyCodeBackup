@@ -253,15 +253,6 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
             Console.WriteLine("new string Length = " + output.Length);
         }
 
-        public static string GetNumString(int num)
-        {
-            if (num < 10 * 1000)
-                return num.ToString();
-            else if (num < 10 * 1000 * 1000)
-                return num / 1000 + "K";
-            else
-                return num / 1000000 + "M";
-        }
         /// <summary>
         /// 测试按钮 随便写
         /// </summary>
@@ -282,5 +273,27 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
             //    Console.WriteLine(output[0]);
         }
 
+
+        /// <summary>
+        /// 日期=>时间戳
+        /// </summary>
+        /// <param name="d"></param>
+        /// <returns></returns>
+        public static long GetUnixTimeStamp(DateTime d)
+        {
+            long unixBaseMillis = new DateTime(1970, 1, 1, 0, 0, 0).ToFileTimeUtc() / 10000;
+            return ((d.ToFileTime() / 10000) - unixBaseMillis) / 1000;
+        }
+        /// <summary>
+        /// 时间戳=>日期
+        /// </summary>
+        /// <param name="unix"></param>
+        /// <returns></returns>
+        public static DateTime GetUnixDateTime(long unix)
+        {
+            DateTime dtStart = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
+            DateTime newTime = dtStart.AddSeconds(unix);
+            return newTime;
+        }
     }
 }
