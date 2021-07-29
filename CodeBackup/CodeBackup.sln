@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBackup", "CodeBackup\CodeBackup.csproj", "{A677B399-BC9B-4E1A-8963-E8E0D534E5C4}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2048", "My2048\2048.csproj", "{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchIconReplace", "BatchIconReplace\BatchIconReplace.csproj", "{271952B9-AAAE-44DC-962F-3617BA1A0415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterSetMaker", "CharacterSetMaker\CharacterSetMaker.csproj", "{DB09F09F-DC5D-4C40-8F35-28638BC41F6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{271952B9-AAAE-44DC-962F-3617BA1A0415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{271952B9-AAAE-44DC-962F-3617BA1A0415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{271952B9-AAAE-44DC-962F-3617BA1A0415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB09F09F-DC5D-4C40-8F35-28638BC41F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB09F09F-DC5D-4C40-8F35-28638BC41F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB09F09F-DC5D-4C40-8F35-28638BC41F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB09F09F-DC5D-4C40-8F35-28638BC41F6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

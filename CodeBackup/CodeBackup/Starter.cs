@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Linq;
+using System.Diagnostics;
 // This is the code for your desktop app.
 // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
 
@@ -261,18 +262,19 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
         private void button12_Click(object sender, EventArgs e)
         {
             //test github
-            /*
-  java.lang.Error: {"result":11036,"msg":"GooglePay取消","info":"IabResult: User canceled. (response: -1005:User cancelled)"}
-             */
-            //string rawString = File.ReadAllText(@"D:\testText.txt");
-            //Regex rg = new Regex(@"{(.*?)}");
+            //string spStirng = "";
+            //string fxString = "";
+            //string rawString = 
+            //    @"花费{0}<img src = 'ui://OutsideCombat/火柴' width = '60' height = '60'/>交换这两件装TXT-43472备的套装效果";
+            //Regex rg = new Regex(@"TXT-([0-9][0-9][0-9][0-9][0-9])");
             //MatchCollection matchedAuthors = rg.Matches(rawString);
-            //string[] output = matchedAuthors.Cast<Match>()
-            //    .Select(m => m.Value)
-            //    .ToArray();
-            //    Console.WriteLine(output[0]);
-        }
+            //if (matchedAuthors.Count > 0)
+            //    fxString = matchedAuthors[0].Value;
+            //Console.WriteLine($"MATCH = {fxString}");
 
+            //spStirng = rg.Replace(rawString, "-replace-", 1);
+            //Console.WriteLine($" spStirng = {spStirng}");
+        }
 
         /// <summary>
         /// 日期=>时间戳
