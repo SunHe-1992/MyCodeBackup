@@ -32,15 +32,14 @@ namespace CharacterSetMaker
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxSavePath = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(56, 110);
+            this.button1.Location = new System.Drawing.Point(48, 95);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 30);
+            this.button1.Size = new System.Drawing.Size(156, 26);
             this.button1.TabIndex = 0;
             this.button1.Text = "生成字符文本";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,48 +47,35 @@ namespace CharacterSetMaker
             // 
             // textBoxSavePath
             // 
-            this.textBoxSavePath.Location = new System.Drawing.Point(56, 27);
+            this.textBoxSavePath.Location = new System.Drawing.Point(48, 23);
             this.textBoxSavePath.Name = "textBoxSavePath";
-            this.textBoxSavePath.Size = new System.Drawing.Size(297, 23);
+            this.textBoxSavePath.Size = new System.Drawing.Size(255, 20);
             this.textBoxSavePath.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 9);
+            this.label2.Location = new System.Drawing.Point(48, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 15);
+            this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Asset文件夹";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(56, 73);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(130, 19);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "读取默认字符文本";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(56, 170);
+            this.textBox1.Location = new System.Drawing.Point(48, 147);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(523, 122);
+            this.textBox1.Size = new System.Drawing.Size(449, 106);
             this.textBox1.TabIndex = 6;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 317);
+            this.ClientSize = new System.Drawing.Size(510, 275);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxSavePath);
             this.Controls.Add(this.button1);
@@ -105,7 +91,6 @@ namespace CharacterSetMaker
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxSavePath;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

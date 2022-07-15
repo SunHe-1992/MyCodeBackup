@@ -12,7 +12,7 @@ namespace CharacterSetMaker
         {
             InitializeComponent();
 
-            textBox1.Text = @"自动读取BuildOnlyAssets\Language 所有txt文件的文本字符
+            textBox1.Text = @"自动读取指定目录 所有txt文件的文本字符
 勾选读取默认字符集 字符会包括 Resource\Fonts 下的 defaultCharacterSet.txt 
 策划手动添加字符请写入到  defaultCharacterSet.txt";
             var di = new DirectoryInfo(string.Format(@"{0}..\..\..\", Application.StartupPath));
@@ -27,17 +27,14 @@ namespace CharacterSetMaker
         HashSet<char> charDic;
         private void button1_Click(object sender, EventArgs e)
         {
+            string outputFile = "导出字库.txt";
             charDic = new HashSet<char>();
-            string readPath = Path.Combine(textBoxSavePath.Text, "BuildOnlyAssets/Language");
+            string readPath = textBoxSavePath.Text;
             string[] files = Directory.GetFiles(readPath, "*.txt", SearchOption.TopDirectoryOnly);
             List<string> fileList = files.ToList();
-            if (checkBox1.Checked)
-            {
-                string readPath2 = Path.Combine(textBoxSavePath.Text, "Resources/Fonts/defaultCharacterSet.txt");
-                fileList.Insert(0, readPath2);
-            }
             foreach (string fileName in fileList)
             {
+                if (fileName == outputFile) continue;
                 string allContent = File.ReadAllText(fileName);
                 foreach (char c in allContent)
                 {
@@ -49,7 +46,7 @@ namespace CharacterSetMaker
             {
                 writeContent += c;
             }
-            string writePath = Path.Combine(textBoxSavePath.Text, "Resources/Fonts/characterSet.txt");
+            string writePath = Path.Combine(textBoxSavePath.Text, outputFile);
             File.WriteAllText(writePath, writeContent);
             MessageBox.Show("字库生成成功 路径是 " + writePath);
 
