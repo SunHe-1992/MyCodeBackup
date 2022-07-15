@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 //Written by Krane Sun 2014-11-18 17:15:00
 
-namespace WindowsFormsApplication2
+namespace Levenshtein
 {
     public partial class Form1 : Form
     {

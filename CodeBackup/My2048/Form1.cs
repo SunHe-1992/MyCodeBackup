@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace _2048
+namespace Game2048
 {
     public partial class Form1 : Form
     {

@@ -1,6 +1,6 @@
 ﻿//Written by Krane Sun 2014-11-18 17:15:36
 
-namespace WindowsFormsApplication2
+namespace Levenshtein
 {
     class Levenshtein
     {

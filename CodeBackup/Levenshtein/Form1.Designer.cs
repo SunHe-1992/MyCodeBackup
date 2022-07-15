@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace Levenshtein
 {
     partial class Form1
     {

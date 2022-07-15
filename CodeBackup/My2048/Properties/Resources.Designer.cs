@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _2048.Properties {
+namespace Game2048.Properties {
     using System;
     
     

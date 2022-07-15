@@ -1,4 +1,4 @@
-﻿namespace _2048
+﻿namespace Game2048
 {
     partial class Form1
     {
