@@ -41,7 +41,7 @@ namespace CharacterSetMaker
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(156, 26);
             this.button1.TabIndex = 0;
-            this.button1.Text = "生成字符文本";
+            this.button1.Text = "生成字库文本";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -57,9 +57,9 @@ namespace CharacterSetMaker
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(48, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(184, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Asset文件夹";
+            this.label2.Text = "字符来源文件夹读取所有TXT文件";
             // 
             // textBox1
             // 
@@ -80,7 +80,7 @@ namespace CharacterSetMaker
             this.Controls.Add(this.textBoxSavePath);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "字库生成工具";
             this.ResumeLayout(false);
             this.PerformLayout();
 

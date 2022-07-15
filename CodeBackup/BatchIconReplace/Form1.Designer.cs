@@ -92,7 +92,7 @@
             this.Controls.Add(this.newIconFolder);
             this.Controls.Add(this.btnIconFolder);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "批量图标替换";
             this.ResumeLayout(false);
             this.PerformLayout();
 
