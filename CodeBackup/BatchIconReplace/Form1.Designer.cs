@@ -67,7 +67,7 @@
             this.btnHongqueFolder.Name = "btnHongqueFolder";
             this.btnHongqueFolder.Size = new System.Drawing.Size(275, 23);
             this.btnHongqueFolder.TabIndex = 5;
-            this.btnHongqueFolder.Text = "确认红雀工程文件夹";
+            this.btnHongqueFolder.Text = "确认目标工程文件夹";
             this.btnHongqueFolder.UseVisualStyleBackColor = true;
             this.btnHongqueFolder.Click += new System.EventHandler(this.btnHongqueFolder_Click);
             // 
