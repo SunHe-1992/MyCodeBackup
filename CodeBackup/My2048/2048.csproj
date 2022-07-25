@@ -7,9 +7,9 @@
     <ProjectGuid>{A7AC81E2-1A8D-4392-8AA1-80968490EBE7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2048</RootNamespace>
-    <AssemblyName>2048</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>Game2048</RootNamespace>
+    <AssemblyName>Game2048</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile>

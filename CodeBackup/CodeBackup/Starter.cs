@@ -298,6 +298,11 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
                 name = _name;
             }
         }
+        //record DemoRecord
+        //{
+
+        //}
+
 
         /// <summary>
         /// 日期=>时间戳
@@ -341,6 +346,13 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
             struct3.name = "pear";
             Console.WriteLine($"struct1 name ={struct1.name}");
             Console.WriteLine($"struct3 name ={struct3.name}");
+
+            //record
+            
         }
+
+
     }
+
+
 }

@@ -7,9 +7,9 @@
     <ProjectGuid>{197CDFF9-1E43-4B81-9AD0-9F99572FB318}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsFormsApplication2</RootNamespace>
-    <AssemblyName>WindowsFormsApplication2</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>Levenshtein</RootNamespace>
+    <AssemblyName>Levenshtein</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

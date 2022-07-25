@@ -7,9 +7,9 @@
     <ProjectGuid>{271952B9-AAAE-44DC-962F-3617BA1A0415}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>批量换红雀图标</RootNamespace>
-    <AssemblyName>批量换红雀图标</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>BatchIconReplace</RootNamespace>
+    <AssemblyName>BatchIconReplace</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
