@@ -274,6 +274,29 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
 
             //spStirng = rg.Replace(rawString, "-replace-", 1);
             //Console.WriteLine($" spStirng = {spStirng}");
+
+          
+
+        }
+        class DemoClass
+        {
+            public int id = 123;//class 允许变量有默认值
+            public string name = "tommy";
+            public DemoClass(int _id, string _name)
+            {
+                id = _id;
+                name = _name;
+            }
+        }
+        struct DemoStruct
+        {
+            public int id; //Struct 变量不可默认值
+            public string name;
+            public DemoStruct(int _id, string _name)
+            {
+                id = _id;
+                name = _name;
+            }
         }
 
         /// <summary>
@@ -296,6 +319,28 @@ START TortoiseProc.exe /command:update /path:"C:\Project\dddddd\"
             DateTime dtStart = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
             DateTime newTime = dtStart.AddSeconds(unix);
             return newTime;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            //class
+            DemoClass class1 = new DemoClass(1, "red");
+            DemoClass class2 = new DemoClass(2, "blue");
+            DemoClass class3 = class1;//class 是引用类型 class3 和class1是同一个对象的2个引用
+            class3.name = "yellow";
+            Console.WriteLine($"class1 name ={class1.name}");
+            Console.WriteLine($"class3 name ={class3.name}");
+
+            //struct
+            DemoStruct struct1;//struct 不使用new也可以声明  类似int
+            struct1.id = 123;
+            struct1.name = "apple";
+
+            DemoStruct struct2 = new DemoStruct(122, "melon");//使用new也可以
+            DemoStruct struct3 = struct1;//struct是值类型 实际上是deep复制
+            struct3.name = "pear";
+            Console.WriteLine($"struct1 name ={struct1.name}");
+            Console.WriteLine($"struct3 name ={struct3.name}");
         }
     }
 }
